@@ -14,7 +14,7 @@ export default async function handler(
     const data = await prisma.post.findMany({
       orderBy: [
         {
-          createdAt: "desc",
+          createdAt: "asc",
         },
       ],
     });
