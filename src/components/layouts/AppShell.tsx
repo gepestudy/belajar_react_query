@@ -15,14 +15,14 @@ const MyAppshell = ({ children }: { children: JSX.Element }) => {
         >
           {/* Header content */}
           <div>
-            <Link href="#">
+            <Link href="/">
               <p className="text-2xl font-bold">GEPE</p>
             </Link>
           </div>
-          <div className="">
+          <div>
             <ul className="flex space-x-8">
               <li>
-                <Link href="#" className="text-lg font-semibold">
+                <Link href="/" className="text-lg font-semibold">
                   Home
                 </Link>
               </li>

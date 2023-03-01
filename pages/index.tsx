@@ -1,18 +1,12 @@
-import { ToggleColorScheme } from "@/src/components/button/ToggleColorScheme";
+import FormCreatePost from "@/src/components/forms/FormCreatePost";
 import MyAppshell from "@/src/components/layouts/AppShell";
-import LoadingHome from "@/src/components/loadings/LoadingHome";
-import { Button, Card, Container, Grid, Group, Text } from "@mantine/core";
-import { Posts } from "@prisma/client";
-import { useQuery } from "@tanstack/react-query";
-import axios, { AxiosError } from "axios";
+import Posts from "@/src/components/posts/Posts";
+import { Container, Space } from "@mantine/core";
 import Head from "next/head";
 
 export default function Home() {
-  const { data, error, isLoading, isError } = useQuery<Posts[], AxiosError>({
-    queryKey: ["post"],
-    queryFn: getPost,
-  });
-
+    const angka:number = 5;
+    console.log(!!angka)
   return (
     <>
       <Head>
@@ -22,47 +16,12 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <MyAppshell>
-        <>
-          {isLoading && <LoadingHome />}
-          {isError && <p>{error.message}</p>}
-          {data && (
-            <Container>
-              <Grid justify={"center"}>
-                {data.map((post: Posts) => (
-                  <Grid.Col md={12} lg={4} key={post.id}>
-                    <Card shadow="sm" p="lg" radius="md" withBorder>
-                      <Group position="apart" mt="md" mb="xs">
-                        <Text weight={500}>{post.title}</Text>
-                      </Group>
-
-                      <Text size="sm" color="dimmed" truncate={"end"}>
-                        {post.body}
-                      </Text>
-
-                      <Button
-                        variant="light"
-                        color="blue"
-                        fullWidth
-                        mt="md"
-                        radius="md"
-                      >
-                        Read More
-                      </Button>
-                    </Card>
-                  </Grid.Col>
-                ))}
-              </Grid>
-            </Container>
-          )}
-        </>
+        <Container>
+          <FormCreatePost />
+          <Space h="xl" />
+          <Posts />
+        </Container>
       </MyAppshell>
     </>
   );
-}
-
-export async function getPost() {
-  const { data } = await axios.get<Posts[]>(
-    "https://jsonplaceholder.typicode.com/posts"
-  );
-  return data;
 }

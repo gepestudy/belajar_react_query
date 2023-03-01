@@ -17,6 +17,8 @@ import {
   useQuery,
 } from "@tanstack/react-query";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
+import { ModalsProvider } from "@mantine/modals";
+import { NotificationsProvider } from "@mantine/notifications";
 
 const queryClient = new QueryClient();
 const appendCache = createEmotionCache({ key: "mantine", prepend: false });
@@ -49,7 +51,11 @@ export default function App(props: AppProps & { colorScheme: ColorScheme }) {
           withGlobalStyles
           withNormalizeCSS
         >
-          <Component {...pageProps} />
+          <NotificationsProvider position="bottom-right" limit={5}>
+            <ModalsProvider>
+              <Component {...pageProps} />
+            </ModalsProvider>
+          </NotificationsProvider>
           <ReactQueryDevtools />
         </MantineProvider>
       </ColorSchemeProvider>
