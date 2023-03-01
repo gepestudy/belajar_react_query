@@ -4,17 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d6808174-5a61-4b3f-a832-06f618a520ed" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/react-query-tutorial.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/api/posts.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prisma/schema.prisma" beforeDir="false" afterPath="$PROJECT_DIR$/prisma/schema.prisma" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layouts/AppShell.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layouts/AppShell.tsx" afterDir="false" />
+    <list default="true" id="d6808174-5a61-4b3f-a832-06f618a520ed" name="Changes" comment="test commit dari webstorm">
+      <change beforePath="$PROJECT_DIR$/pages/api/posts/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/pages/api/posts/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,11 +49,34 @@
       <workItem from="1677568590736" duration="227000" />
       <workItem from="1677577701261" duration="971000" />
       <workItem from="1677649654119" duration="118000" />
-      <workItem from="1677649778024" duration="305000" />
+      <workItem from="1677649778024" duration="573000" />
     </task>
+    <task id="LOCAL-00001" summary="test commit dari webstorm">
+      <created>1677650229270</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1677650229270</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="test commit dari webstorm" />
+    <option name="LAST_COMMIT_MESSAGE" value="test commit dari webstorm" />
   </component>
 </project>
